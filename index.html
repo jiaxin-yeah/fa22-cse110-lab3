@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CSE 110 Lab2">
+    <meta name="author" content="Jiaxin Ye">
+    <link rel="icon" type="image/png" href="/images/unamed.png">
+    <title>Meeting Minutes</title>
+  </head>
+  <body>
+    <header>
+        <h1>Meetings about the Graph project</h1>
+        <h1>Oct 9th, 2022</h1>
+        <div>
+            Attendance list: Killua Zoldyck, Kyoya Ootori, Senku Ishigami
+        </div>
+        <nav>
+          <ol>
+            <li><a href="#meeting agenda">Meeting Agenda</a></li>
+            <li><a href="#unfinished business">Unfinished Business</a></li>
+            <li><a href="#new business">New Business</a></li>
+            <li><a href="#concerns">Concerns</a></li>
+            <li><a href="#subsribe">Subscribe</a></li>
+          </ol>
+        </nav>
+      </header>
+    <main>
+      <h2>Graph Representation</h2>
+      <img
+        src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/undirectedgraph.png"
+        alt="graph"
+        width="250"
+      />
+      <h3 id="meeting agenda">Meeting Agenda</h3>
+      <ol>
+        <li><input type="checkbox"/> Settle down whether to use <b class="keywords">adjacency list</b> or <b class="keywords">adjacency matrix</b></li>
+        <li><input type="checkbox"/> Writing the constructor</li>
+        <li><input type="checkbox"/> Implementing basic graph operations</li>
+        <li><input type="checkbox"/> Finding a weighted shortest path</li>
+        <li><input type="checkbox"/> Finding the smallest connecting threshold</li>
+      </ol>
+      <section>
+        <h3 id="unfinished business">Unfinished Business</h3>
+        <p>
+          Last meeting, we didn't settle down on whether we should use <span>adjacency
+          matrix</span> or <span>adjacency list</span> to represent a graph. <strong>Today's first goal</strong> is to
+          choose between these two.
+        </p>
+        <ul>
+          <li>adjacency matrix</li>
+          <li>adjacency list</li>
+        </ul>
+        <details>
+            <summary>Recap</summary>
+            Adjacency matrix storage: O (|V|^2)<br>
+            Adjacency list storage: O (|V| + |E|)<br>
+        </details>
+        <br>
+        <img
+          src="https://media.geeksforgeeks.org/wp-content/uploads/20200205134219/Untitled-Diagram72.png"
+          alt="adjacency list"
+          width="250"
+        />
+        <img
+          src="http://www.btechsmartclass.com/data_structures/ds_images/Graph%20Adjacency%20Matrix%201.jpg"
+          alt="adjacency matrix"
+          width="250"
+        />
+      </section>
+      <section>
+        <h3 id="new business">New Business</h3>
+        <p>
+          Besides finishing what we've left from the last meeting, we need to start
+          working on the constructor after we've decided which data structure to use.<br>
+          Then, we need to finish the methods about the basic graph properties.<br>
+          After this, we need to tackle down the two most complicated methods: 
+          finding a weighted shortest path using <em>BFS</em> and the smallest connecting threshold. 
+          This is going to be a lot of work. Thus, <i>carpe diem</i>!
+        </p>
+      </section>
+      <section>
+        <h3 id="concerns">Concerns or Comments</h3>
+        Killua: <em>runtime complexity</em>, <em>space complexity</em><br>
+        <textarea rows="5" cols="33">Do we need to consider about the runtime complexity? If we do care about the runtime complexity, will we explode the space complexity?</textarea>
+        <br>
+        Kyoya:<br>
+        <textarea rows="5" cols="33"></textarea>
+        <br>
+        Senku:<br>
+        <textarea rows="5" cols="33"></textarea>
+      </section>
+      <section>
+        <h3 id="thanks">Thanks for attending the meeting!</h3>
+        <p>Here is the firework show from Disney!</p>
+        <video controls width="250">
+            <source src="/images/IMG_2577.mp4"
+                    type="video/mp4">
+        </video>
+        <p>Don't be frightened by all of this work. Listen to this fight song to cheer you up!</p>
+        <audio controls width="250">
+            <source src="/images/Fight Song.mp3"
+                    type="audio/mpeg">
+        </audio>
+      </section>
+    </main>
+    <hr>
+    <footer>
+      <h4 id="Contact">Still Have Questions? Enter email address and I will reach out!</h4>
+      <form onsubmit="alert('Entered')">
+        <input type="text" placeholder="Enter email address" />
+        <button>Submit</button>
+      </form>
+      <br>
+      <form>
+        <fieldset>
+          <legend>Check-in Time</legend>
+          <label for="name">Name: </label>
+          <input type="text" id="name"/>
+          <label for="date">Date: </label>
+          <input type="date" id="date" value="2022-10-09"/>
+          <br>
+          <label for="name">Name: </label>
+          <input type="text" id="name"/>
+          <label for="date">Date: </label>
+          <input type="date" id="date" value="2022-10-09"/>
+          <br>
+          <label for="name">Name: </label>
+          <input type="text" id="name"/>
+          <label for="date">Date: </label>
+          <input type="date" id="date" value="2022-10-09"/>
+        </fieldset>
+      </form>
+      <label for="meeting">Schedule the next meeting time:</label>
+      <input list="spots" id="meeting" name="meeting" />
+      <datalist id="spots">
+        <option value="Next Monday 7pm"></option>
+        <option value="Next Wednesday 7pm"></option>
+        <option value="Next Friday 7pm"></option>
+      </datalist>
+      <br>
+      <label for="format-select">Choose a meeting format:</label>
+      <select name="formats" id="format-select">
+        <option value="">--Please choose an option--</option>
+        <option value="Zoom">Zoom</option>
+        <option value="Geisel">Geisel</option>
+      </select>
+      <form>
+        <legend>Please rate this meeting:</legend>
+          <div>
+            <input type="radio" id="choice1"
+             name="rating" value="good">
+            <label for="choice1">Good</label>
+      
+            <input type="radio" id="choice2"
+             name="rating" value="normal">
+            <label for="choice2">Normal</label>
+      
+            <input type="radio" id="choice3"
+             name="rating" value="bad">
+            <label for="choice3">Bad</label>
+          </div>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+      </form>
+      <br />
+      <div>&copy; Jiaxin Ye</div>
+    </footer>
+  </body>
+</html>
