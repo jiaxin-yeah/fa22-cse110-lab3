@@ -17,9 +17,9 @@
         </div>
         <nav>
           <ol>
-            <li><a href="#meeting agenda">Meeting Agenda</a></li>
-            <li><a href="#unfinished business">Unfinished Business</a></li>
-            <li><a href="#new business">New Business</a></li>
+            <li><a href="#meetingAgenda">Meeting Agenda</a></li>
+            <li><a href="#unfinishedBusiness">Unfinished Business</a></li>
+            <li><a href="#newBusiness">New Business</a></li>
             <li><a href="#concerns">Concerns</a></li>
           </ol>
         </nav>
@@ -32,7 +32,7 @@
         width="250"
       />
       <section>
-        <h3 id="meeting agenda">Meeting Agenda</h3>
+        <h3 id="meetingAgenda">Meeting Agenda</h3>
         <ol>
             <li><input type="checkbox"/> Settle down whether to use <b class="keywords">adjacency list</b> or <b class="keywords">adjacency matrix</b></li>
             <li><input type="checkbox"/> Writing the constructor</li>
@@ -42,7 +42,7 @@
         </ol>
       </section>
       <section>
-        <h3 id="unfinished business">Unfinished Business</h3>
+        <h3 id="unfinishedBusiness">Unfinished Business</h3>
         <p>
           Last meeting, we didn't settle down on whether we should use <span>adjacency
           matrix</span> or <span>adjacency list</span> to represent a graph. <strong>Today's first goal</strong> is to
@@ -70,7 +70,7 @@
         />
       </section>
       <section>
-        <h3 id="new business">New Business</h3>
+        <h3 id="newBusiness">New Business</h3>
         <p>
           Besides finishing what we've left from the last meeting, we need to start
           working on the constructor after we've decided which data structure to use.<br>
@@ -99,8 +99,8 @@
                     type="video/mp4">
         </video>
         <p>Don't be frightened by all of this work. Listen to this fight song to cheer you up!</p>
-        <audio controls width="250">
-            <source src="/images/Fight Song.mp3"
+        <audio>
+            <source src="/images/FightSong.mp3"
                     type="audio/mpeg">
         </audio>
       </section>
@@ -116,20 +116,20 @@
       <form>
         <fieldset>
           <legend>Check-in Time</legend>
-          <label for="name">Name: </label>
-          <input type="text" id="name"/>
-          <label for="date">Date: </label>
-          <input type="date" id="date" value="2022-10-09"/>
+          <label for="name1">Name: </label>
+          <input type="text" id="name1"/>
+          <label for="date1">Date: </label>
+          <input type="date" id="date1" value="2022-10-09"/>
           <br>
-          <label for="name">Name: </label>
-          <input type="text" id="name"/>
-          <label for="date">Date: </label>
-          <input type="date" id="date" value="2022-10-09"/>
+          <label for="name2">Name: </label>
+          <input type="text" id="name2"/>
+          <label for="date2">Date: </label>
+          <input type="date" id="date2" value="2022-10-09"/>
           <br>
-          <label for="name">Name: </label>
-          <input type="text" id="name"/>
-          <label for="date">Date: </label>
-          <input type="date" id="date" value="2022-10-09"/>
+          <label for="name3">Name: </label>
+          <input type="text" id="name3"/>
+          <label for="date3">Date: </label>
+          <input type="date" id="date3" value="2022-10-09"/>
         </fieldset>
       </form>
       <label for="meeting">Schedule the next meeting time:</label>
@@ -147,6 +147,7 @@
         <option value="Geisel">Geisel</option>
       </select>
       <form>
+        <fieldset>
         <legend>Please rate this meeting:</legend>
           <div>
             <input type="radio" id="choice1"
@@ -164,6 +165,7 @@
           <div>
             <button type="submit">Submit</button>
           </div>
+        </fieldset>
       </form>
       <br />
       <div>&copy; Jiaxin Ye</div>
