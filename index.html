@@ -10,20 +10,20 @@
   </head>
   <body>
     <header>
-        <h1>Meetings about the Graph project</h1>
-        <h1>Oct 9th, 2022</h1>
-        <div>
-            Attendance list: Killua Zoldyck, Kyoya Ootori, Senku Ishigami
-        </div>
-        <nav>
-          <ol>
-            <li><a href="#meetingAgenda">Meeting Agenda</a></li>
-            <li><a href="#unfinishedBusiness">Unfinished Business</a></li>
-            <li><a href="#newBusiness">New Business</a></li>
-            <li><a href="#concerns">Concerns</a></li>
-          </ol>
-        </nav>
-      </header>
+      <h1>Meetings about the Graph project</h1>
+      <h1>Oct 9th, 2022</h1>
+      <div>
+          Attendance list: Killua Zoldyck, Kyoya Ootori, Senku Ishigami
+      </div>
+      <nav>
+        <ol>
+          <li><a href="#meetingAgenda">Meeting Agenda</a></li>
+          <li><a href="#unfinishedBusiness">Unfinished Business</a></li>
+          <li><a href="#newBusiness">New Business</a></li>
+          <li><a href="#concerns">Concerns</a></li>
+        </ol>
+      </nav>
+    </header>
     <main>
       <h2>Graph Representation</h2>
       <img
@@ -107,10 +107,43 @@
     </main>
     <hr>
     <footer>
-      <h4 id="Contact">Still Have Questions? Enter email address and I will reach out!</h4>
       <form onsubmit="alert('Entered')">
+        <p>Still Have Questions? Enter the email address and I will reach out!</p>
         <input type="text" placeholder="Enter email address" />
         <button>Submit</button>
+      </form>
+      <form>
+        <p>Schedule the next meeting time:</p>
+        <input list="spots" name="meeting" />
+        <datalist id="spots">
+          <option value="Next Monday 7pm"></option>
+          <option value="Next Wednesday 7pm"></option>
+          <option value="Next Friday 7pm"></option>
+        </datalist>
+      </form>
+      <form>
+        <p>Choose a meeting format:</p>
+        <select name="formats">
+          <option value="">--Please choose an option--</option>
+          <option value="Zoom">Zoom</option>
+          <option value="Geisel">Geisel</option>
+        </select>
+      </form>
+      <form>
+        <p>Please rate this meeting:</p>
+          <input type="radio" id="choice1"
+            name="rating" value="good">
+          <label for="choice1">Good</label>
+      
+          <input type="radio" id="choice2"
+            name="rating" value="normal">
+          <label for="choice2">Normal</label>
+      
+          <input type="radio" id="choice3"
+            name="rating" value="bad">
+          <label for="choice3">Bad</label>
+          <br>
+          <button type="submit">Submit</button>
       </form>
       <br>
       <form>
@@ -132,42 +165,7 @@
           <input type="date" id="date3" value="2022-10-09"/>
         </fieldset>
       </form>
-      <label for="meeting">Schedule the next meeting time:</label>
-      <input list="spots" id="meeting" name="meeting" />
-      <datalist id="spots">
-        <option value="Next Monday 7pm"></option>
-        <option value="Next Wednesday 7pm"></option>
-        <option value="Next Friday 7pm"></option>
-      </datalist>
       <br>
-      <label for="format-select">Choose a meeting format:</label>
-      <select name="formats" id="format-select">
-        <option value="">--Please choose an option--</option>
-        <option value="Zoom">Zoom</option>
-        <option value="Geisel">Geisel</option>
-      </select>
-      <form>
-        <fieldset>
-        <legend>Please rate this meeting:</legend>
-          <div>
-            <input type="radio" id="choice1"
-             name="rating" value="good">
-            <label for="choice1">Good</label>
-      
-            <input type="radio" id="choice2"
-             name="rating" value="normal">
-            <label for="choice2">Normal</label>
-      
-            <input type="radio" id="choice3"
-             name="rating" value="bad">
-            <label for="choice3">Bad</label>
-          </div>
-          <div>
-            <button type="submit">Submit</button>
-          </div>
-        </fieldset>
-      </form>
-      <br />
       <div>&copy; Jiaxin Ye</div>
     </footer>
   </body>
