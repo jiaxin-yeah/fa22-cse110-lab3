@@ -27,10 +27,10 @@
       </div>
       <nav>
         <ol>
-          <li><a href="#meetingAgenda">Meeting Agenda</a></li>
-          <li><a href="#unfinishedBusiness">Unfinished Business</a></li>
-          <li><a href="#newBusiness">New Business</a></li>
-          <li><a href="#concerns">Concerns</a></li>
+          <li><a href="#meetingAgenda" target="bg">Meeting Agenda </a></li>
+          <li><a href="#unfinishedBusiness" target="bg">Unfinished Business</a></li>
+          <li><a href="#newBusiness" target="bg">New Business</a></li>
+          <li><a href="#concerns" target="bg">Concerns</a></li>
         </ol>
       </nav>
     </header>
@@ -59,9 +59,19 @@
           choose between these two.
         </p>
         <ul>
-          <li>adjacency matrix</li>
-          <li>adjacency list</li>
-        </ul>
+          <li>
+            <div>adjacency matrix</div>
+              <ul>
+                <li>data structure: 2D array</li>
+              </ul>
+          </li>
+          <li>
+            <div>adjacency list</div>
+            <ul>
+              <li>data structure: unordered map</li>
+            </ul>
+          </li>
+        </ul> 
         <details>
             <summary>Recap</summary>
             Adjacency matrix storage: O (|V|^2)<br>
@@ -76,16 +86,20 @@
           <div class="grid-item">nodeE</div>
         </div>
         <br>
-        <img
-          src="https://media.geeksforgeeks.org/wp-content/uploads/20200205134219/Untitled-Diagram72.png"
-          alt="adjacency list"
-          width="250"
-        />
-        <img
-          src="http://www.btechsmartclass.com/data_structures/ds_images/Graph%20Adjacency%20Matrix%201.jpg"
-          alt="adjacency matrix"
-          width="250"
-        />
+        <div>
+          <img
+            src="https://media.geeksforgeeks.org/wp-content/uploads/20200205134219/Untitled-Diagram72.png"
+            alt="adjacency list"
+            width="250"
+          />
+          <p>👆Adjacency list representation</p>
+          <img
+            src="http://www.btechsmartclass.com/data_structures/ds_images/Graph%20Adjacency%20Matrix%201.jpg"
+            alt="adjacency matrix"
+            width="250"
+          />
+          <p>👆Adjacency matrix representation</p>
+        </div>
       </section>
       <section>
         <h3 id="newBusiness">New Business</h3>
@@ -97,6 +111,7 @@
           finding a weighted shortest path using <em>BFS</em> and the smallest connecting threshold. 
           This is going to be a lot of work. Thus, <i>carpe diem</i>!
         </p>
+        <code>System.out.println("I'm possible!");</code>
       </section>
       <section>
         <h3 id="concerns">Concerns or Comments</h3>
@@ -115,18 +130,20 @@
         <video controls width="250">
             <source src="images/IMG_2577.mp4">
         </video>
-        <p>Don't be frightened by all of this work. Listen to this fight song to cheer you up!</p>
+        <p>Don't be frightened by all of this work. Listen to this fight song at the bottom right to cheer you up!</p>
         <audio controls>
             <source src="images/FightSong.mp3">
         </audio>
       </section>
       <br>
       <div class="box">
-        <h2>Borders</h2>
-        <p>Test borders.</p>
+        <p class="end">The meeting ends now! Have a good day!</p>
       </div>
       <br>
-      <h4>Ends now!</h4>
+      <div class="end">
+        <h4>Bye~</h4>
+      </div>
+      <br>
     </main>
     <hr>
     <footer>

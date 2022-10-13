@@ -127,3 +127,43 @@ a:active {
       background-color: pink;
     }
 }
+
+#thanks {
+    color: darkseagreen;
+}
+
+* {
+    text-align: left;
+}
+
+a[target=bg] {
+    background-color: ivory;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: helvetica;
+}
+
+li {
+    list-style-type: circle;
+}
+
+li li {
+    list-style-type: disc;
+}
+
+li > div {
+    color: darkgreen;
+}
+
+p ~ code {
+    color: blue;
+}
+
+img + p {
+    font-weight: bold;
+}
+
+.end {
+    text-align: center;
+}
