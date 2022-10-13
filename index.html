@@ -5,22 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="CSE 110 Lab2">
     <meta name="author" content="Jiaxin Ye">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico"> 
-    <title>Meeting Minutes CSE</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <title>Meeting Minutes CSE 110 FA22</title>
   </head>
   <body>
     <header>
       <h1>Meetings about the Graph project</h1>
       <h1>Oct 9th, 2022</h1>
       <div>
-          Attendance list: Killua Zoldyck, Kyoya Ootori, Senku Ishigami
+          Attendees: Killua, Kyoya, Senku, Jiaxin
+      </div>
+      <div class="flex-container">
+        <div class="flex-item">Killua</div>
+        <div class="flex-item">Kyoya</div>
+        <div class="flex-item">Senku</div>
+        <div class="flex-item">Jiaxin</div>
       </div>
       <nav>
         <ol>
-          <li><a href="#meetingAgenda">Meeting Agenda</a></li>
-          <li><a href="#unfinishedBusiness">Unfinished Business</a></li>
-          <li><a href="#newBusiness">New Business</a></li>
-          <li><a href="#concerns">Concerns</a></li>
+          <li><a href="#meetingAgenda" target="bg">Meeting Agenda </a></li>
+          <li><a href="#unfinishedBusiness" target="bg">Unfinished Business</a></li>
+          <li><a href="#newBusiness" target="bg">New Business</a></li>
+          <li><a href="#concerns" target="bg">Concerns</a></li>
         </ol>
       </nav>
     </header>
@@ -49,25 +59,47 @@
           choose between these two.
         </p>
         <ul>
-          <li>adjacency matrix</li>
-          <li>adjacency list</li>
-        </ul>
+          <li>
+            <div>adjacency matrix</div>
+              <ul>
+                <li>data structure: 2D array</li>
+              </ul>
+          </li>
+          <li>
+            <div>adjacency list</div>
+            <ul>
+              <li>data structure: unordered map</li>
+            </ul>
+          </li>
+        </ul> 
         <details>
             <summary>Recap</summary>
             Adjacency matrix storage: O (|V|^2)<br>
             Adjacency list storage: O (|V| + |E|)<br>
         </details>
         <br>
-        <img
-          src="https://media.geeksforgeeks.org/wp-content/uploads/20200205134219/Untitled-Diagram72.png"
-          alt="adjacency list"
-          width="250"
-        />
-        <img
-          src="http://www.btechsmartclass.com/data_structures/ds_images/Graph%20Adjacency%20Matrix%201.jpg"
-          alt="adjacency matrix"
-          width="250"
-        />
+        <div class="grid-container">
+          <div class="grid-item">nodeA</div>
+          <div class="grid-item">nodeB</div>
+          <div class="grid-item">nodeC</div>
+          <div class="grid-item">nodeD</div>
+          <div class="grid-item">nodeE</div>
+        </div>
+        <br>
+        <div>
+          <img
+            src="https://media.geeksforgeeks.org/wp-content/uploads/20200205134219/Untitled-Diagram72.png"
+            alt="adjacency list"
+            width="250"
+          />
+          <p>👆Adjacency list representation</p>
+          <img
+            src="http://www.btechsmartclass.com/data_structures/ds_images/Graph%20Adjacency%20Matrix%201.jpg"
+            alt="adjacency matrix"
+            width="250"
+          />
+          <p>👆Adjacency matrix representation</p>
+        </div>
       </section>
       <section>
         <h3 id="newBusiness">New Business</h3>
@@ -79,6 +111,7 @@
           finding a weighted shortest path using <em>BFS</em> and the smallest connecting threshold. 
           This is going to be a lot of work. Thus, <i>carpe diem</i>!
         </p>
+        <code>System.out.println("I'm possible!");</code>
       </section>
       <section>
         <h3 id="concerns">Concerns or Comments</h3>
@@ -97,11 +130,20 @@
         <video controls width="250">
             <source src="images/IMG_2577.mp4">
         </video>
-        <p>Don't be frightened by all of this work. Listen to this fight song to cheer you up!</p>
+        <p>Don't be frightened by all of this work. Listen to this fight song at the bottom right to cheer you up!</p>
         <audio controls>
             <source src="images/FightSong.mp3">
         </audio>
       </section>
+      <br>
+      <div class="box">
+        <p class="end">The meeting ends now! Have a good day!</p>
+      </div>
+      <br>
+      <div class="end">
+        <h4>Bye~</h4>
+      </div>
+      <br>
     </main>
     <hr>
     <footer>
@@ -163,6 +205,7 @@
           <input type="date" id="date3" value="2022-10-09"/>
         </fieldset>
       </form>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Reference</a>
       <br>
       <div>&copy; Jiaxin Ye</div>
     </footer>

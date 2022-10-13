@@ -1,0 +1,169 @@
+/* change background color */
+body {
+    background-color: rgb(239, 229, 239);
+}
+
+/* standardize h1 */
+h1 {
+    color: rgb(61, 99, 195); /* color style 1 */
+    margin-top: 10px; /* margin + abs */
+    margin-left: 0.04in; /* margin + abs */
+    margin-bottom: 0.5cm; /* margin + abs */
+    margin-right: 5em; /* margin + relative */
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* standardize h2 */
+h2 {
+    color: #800080; /* color style 2 */
+    margin: 1ex 1ch 1vw 1vh; /* margin + 4 relatives */
+}
+
+/* standardize h3 */
+h3 {
+    color: hsl(248, 53%, 58%); /* color style 3 */
+}
+
+/* standardize h4 */
+h4 {
+    color: darkblue; /* color style 4 */
+    margin: auto; /* auto margin */
+}
+
+/* standardize for p */
+p { 
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+    max-width: 5000px;
+}
+
+/* short padding for div */
+div {
+    padding: 2px 5px 7px 2px;
+    display: block;
+}
+
+/* standardize border */
+.box {
+    border: 5px solid #0b385f;
+    border-style: line;
+    border-color: black;
+    border-width: 0.15cm;
+    border-radius: 0.15cm;
+    width: 200px;
+    height: 90px;
+}
+
+span {
+    display: inline;
+}
+
+img {
+    min-width: 400px;
+}
+
+audio {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+}
+
+video {
+    position: static;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: red;
+}
+  
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: blue;
+    padding: 1;
+    margin: 10;
+}
+
+.flex-item {
+    background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    line-height: 150px;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto auto;
+    background-color: blue;
+    padding: 5px;
+}
+
+.grid-item {
+    background-color: lightblue;
+    padding: 2px;
+    font-size: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+      background-color: pink;
+    }
+}
+
+#thanks {
+    color: darkseagreen;
+}
+
+* {
+    text-align: left;
+}
+
+a[target=bg] {
+    background-color: ivory;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: helvetica;
+}
+
+li {
+    list-style-type: circle;
+}
+
+li li {
+    list-style-type: disc;
+}
+
+li > div {
+    color: darkgreen;
+}
+
+p ~ code {
+    color: blue;
+}
+
+img + p {
+    font-weight: bold;
+}
+
+.end {
+    text-align: center;
+}
