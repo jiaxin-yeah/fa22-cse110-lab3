@@ -57,14 +57,17 @@ div {
     height: 90px;
 }
 
+/* standardize for span */
 span {
     display: inline;
 }
 
+/* standardize for img */
 img {
     min-width: 400px;
 }
 
+/* standardize for audio */
 audio {
     position: fixed;
     bottom: 0;
@@ -72,18 +75,22 @@ audio {
     width: 300px;
 }
 
+/* standardize for video */
 video {
     position: static;
 }
 
+/* standardize for a:hover */
 a:hover {
     color: green;
 }
 
+/* standardize for active */
 a:active {
     color: red;
 }
-  
+
+/* standardize for flex-container */
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -94,6 +101,7 @@ a:active {
     margin: 10;
 }
 
+/* standardize for flex-item */
 .flex-item {
     background: tomato;
     padding: 5px;
@@ -107,6 +115,7 @@ a:active {
     font-family: 'Silkscreen', cursive;
 }
 
+/* standardize for grid-container */
 .grid-container {
     display: grid;
     gap: 10px;
@@ -115,6 +124,7 @@ a:active {
     padding: 5px;
 }
 
+/* standardize for grid-item */
 .grid-item {
     background-color: lightblue;
     padding: 2px;
@@ -122,48 +132,59 @@ a:active {
     text-align: center;
 }
 
+/* standardize for max-width */
 @media screen and (max-width: 480px) {
     body {
       background-color: pink;
     }
 }
 
+/* standardize for the thanks id */
 #thanks {
     color: darkseagreen;
 }
 
+/* universal selector */
 * {
     text-align: left;
 }
 
+/* attribute selector */
 a[target=bg] {
     background-color: ivory;
 }
 
+/* multiple selectors */
 h1, h2, h3, h4, h5, h6 {
     font-family: helvetica;
 }
 
+/* element selector */
 li {
     list-style-type: circle;
 }
 
+/* Descendant Combinator */
 li li {
     list-style-type: disc;
 }
 
+/* Child Combinator */
 li > div {
     color: darkgreen;
 }
 
+/* General sibling combinator */
 p ~ code {
     color: blue;
 }
 
+/* Adjacent sibling combinator */
 img + p {
     font-weight: bold;
 }
 
+/* Combining Two Selectors */
 .end {
     text-align: center;
 }
